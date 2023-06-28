@@ -10,7 +10,6 @@ public class SprzedajSamochod {
         int id = scanner.nextInt();
 
         String query = "DELETE FROM samochody WHERE id = ?";
-        Connection connection;
         PreparedStatement preparedStatement = komis.getConnection().prepareStatement(query);
         preparedStatement.setInt(1, id);
         int affectedRows = preparedStatement.executeUpdate();

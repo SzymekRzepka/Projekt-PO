@@ -7,7 +7,6 @@ public class WszystkieSamochody {
     public WszystkieSamochody(KomisSamochodowy komis, Scanner scanner) throws SQLException {
         this.komis = komis;
         String query = "SELECT * FROM samochody";
-        Connection connection;
         Statement statement = komis.getConnection().createStatement();
         ResultSet resultSet = ((Statement) statement).executeQuery(query);
 
