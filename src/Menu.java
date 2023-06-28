@@ -27,7 +27,7 @@ public class Menu {
                     new WyszukajSamochod(komis, scanner);
                     break;
                 case 2:
-                    new WszystkieSamochody(komis, scanner);
+                    new WszystkieSamochody(komis);
                     break;
                 case 3:
                     new KupSamochod(komis, scanner);

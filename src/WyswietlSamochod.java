@@ -2,7 +2,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class WyswietlSamochod {
-    public static void WyswietlSamochod(ResultSet resultSet) throws SQLException, SQLException {
+    public static void WyswietlSamochod(ResultSet resultSet) throws SQLException {
         int id = resultSet.getInt("id");
         String marka_samochodu = resultSet.getString("marka_samochodu");
         String model_samochodu = resultSet.getString("model_samochodu");

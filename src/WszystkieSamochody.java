@@ -4,11 +4,11 @@ import java.util.Scanner;
 public class WszystkieSamochody {
     private KomisSamochodowy komis;
 
-    public WszystkieSamochody(KomisSamochodowy komis, Scanner scanner) throws SQLException {
+    public WszystkieSamochody(KomisSamochodowy komis) throws SQLException {
         this.komis = komis;
         String query = "SELECT * FROM samochody";
         Statement statement = komis.getConnection().createStatement();
-        ResultSet resultSet = ((Statement) statement).executeQuery(query);
+        ResultSet resultSet = statement.executeQuery(query);
 
         while (resultSet.next()) {
             WyswietlSamochod.WyswietlSamochod(resultSet);
